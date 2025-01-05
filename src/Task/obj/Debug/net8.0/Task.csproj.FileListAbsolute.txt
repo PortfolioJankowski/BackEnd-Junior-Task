@@ -16,3 +16,4 @@ C:\Users\matja\source\repos\BackEnd-Junior-Task\src\Task\obj\Debug\net8.0\ref\Ta
 C:\Users\matja\source\repos\BackEnd-Junior-Task\src\Task\bin\Debug\net8.0\CommandLine.dll
 C:\Users\matja\source\repos\BackEnd-Junior-Task\src\Task\obj\Debug\net8.0\Task.csproj.AssemblyReference.cache
 C:\Users\matja\source\repos\BackEnd-Junior-Task\src\Task\obj\Debug\net8.0\Task.csproj.Up2Date
+C:\Users\matja\source\repos\BackEnd-Junior-Task\src\Task\bin\Debug\net8.0\Newtonsoft.Json.dll
