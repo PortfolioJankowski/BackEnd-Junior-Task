@@ -1,6 +1,7 @@
 ﻿using Task.Enums;
 using Task.Interfaces;
 using Task.Models;
+using Task.Services.DateConverter;
 
 namespace Task.Services.Participants
 {
@@ -19,8 +20,8 @@ namespace Task.Services.Participants
                     Age = ParseInt(properties[(int)ParticipantCsvReportHeaders.Age]),
                     Name = ParseString(properties[(int)ParticipantCsvReportHeaders.Name]),
                     Email = ParseString(properties[(int)ParticipantCsvReportHeaders.Email]),
-                    WorkStart = DateTime.Now, //Placeholder - DateConverter required
-                    WorkEnd = DateTime.Now
+                    WorkStart = ZuluDateConverter.DateOffsetToDateTime(properties[(int)ParticipantCsvReportHeaders.WorkStart]),
+                    WorkEnd = ZuluDateConverter.DateOffsetToDateTime(properties[(int)ParticipantCsvReportHeaders.WorkEnd])
                 };
                 return (participant, null);
             }
