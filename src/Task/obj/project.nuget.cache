@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "1wHh36ovwfRTzx+F0KOo/ISckPJT+3+OgYP9O08/2Dd+HauQ9pXohwEuoGk86ONqDRLtX9ZXq8tcQUchygg/dg==",
+  "dgSpecHash": "136Nszw3npocaiQAA6hs6w54nWmhxncM9GN4r/v4FI+ojfpY8dzT+rM/9kR+lD4ZN3uIBKJ9rD2+B8l9g0agzQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\matja\\source\\repos\\BackEnd-Junior-Task\\src\\Task\\Task.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\matja\\.nuget\\packages\\commandlineparser\\2.9.1\\commandlineparser.2.9.1.nupkg.sha512"
+  ],
   "logs": []
 }
