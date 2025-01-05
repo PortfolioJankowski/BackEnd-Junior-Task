@@ -1,6 +1,7 @@
 ﻿using System.Runtime.Serialization;
 using Task.Models;
 using Task.Services.FileReader;
+using Task.Services.Participants;
 using Task.Services.Static;
 
 namespace Task
@@ -14,6 +15,8 @@ namespace Task
                 var arguments = CommandLineArgumentsParser.Parse(args);
                 ArgumentValidator.ValidateArguments(arguments);
                 var participants = await LoadParticipantsDataAsync(arguments.Url);
+                var participantStatistics = new ParticipantAgeService(participants);
+                participantStatistics.HandleCommand(arguments);
             }
             catch (ArgumentException ex)
             {
